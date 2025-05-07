@@ -11,4 +11,4 @@ README.txt
   //also gives legal advice
 leagal advice:
   //do not use this code without our permision
-  //you have our unquestioned permision to use the code for any purpose, outside of other illegal activities, such as maze smuggling
+  //you have our unquestioned permision to use the code for any purpose, outside of other illegal activities such as maze smuggling
