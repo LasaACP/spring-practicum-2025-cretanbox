@@ -3,10 +3,11 @@
 using namespace std; 
 
 Node* mazeGen::Generate(Node* s){
-
-  bool done = false; 
-  while(!done){
-    
+ 
+  while(false){
+    else{
+      return s; 
+    }
   }
   return s; 
 }
