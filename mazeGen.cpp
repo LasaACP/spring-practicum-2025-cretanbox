@@ -2,7 +2,12 @@
 
 using namespace std; 
 
-Node* mazeGen::mazeGen(Node* s){
+Node* mazeGen::Generate(Node* s){
+  int x = 10; 
+  int y = 10; 
+
+
   
+  return s; 
 }
 
