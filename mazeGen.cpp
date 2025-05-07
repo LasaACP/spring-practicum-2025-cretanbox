@@ -6,6 +6,7 @@ Node mazeGen::Generate(Node s){
  Node c = s; 
  Node ohGodItsHideous[x][y]; 
   while(false){
+    
     else{
       return s; 
     }
