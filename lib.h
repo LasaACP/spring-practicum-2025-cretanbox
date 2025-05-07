@@ -14,7 +14,7 @@ public:
 static void getNode(int x, int y); 
 static void setNode(Node set); 
 
-
+static void display(Node s);
 
 
 }
