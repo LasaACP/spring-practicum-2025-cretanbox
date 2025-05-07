@@ -3,7 +3,7 @@
 using namespace std; 
 
 Node* mazeGen::Generate(Node* s){
- 
+ Node* c = s; 
   while(false){
     else{
       return s; 
