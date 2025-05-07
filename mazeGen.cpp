@@ -6,8 +6,10 @@ Node* mazeGen::Generate(Node* s){
   int x = 10; 
   int y = 10; 
 
-
-  
+  bool done = false; 
+  while(!done){
+    
+  }
   return s; 
 }
 
