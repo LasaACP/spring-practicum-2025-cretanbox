@@ -16,3 +16,9 @@ leagal advice:
 for (int i = 0; i < 201; i++){
     std::cout<<i<<std::endl; 
 }
+lib.h
+  //header file for the lib class basically where our graph class goes
+  // contains the Node struct and its accompaniing functions
+lib.cpp
+  // the actual functioning class
+
