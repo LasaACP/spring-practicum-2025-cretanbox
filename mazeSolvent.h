@@ -1,4 +1,4 @@
-class solve{
+class Solve{
 
 public:
 bool SolveMaze(Node* Target);
