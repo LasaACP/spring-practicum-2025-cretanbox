@@ -1,6 +1,6 @@
 class Solve{
 
-bool SolveMazeA(Node target){
+bool SolveMaze(Node target){
 Node* win = target;
   bool deadend = false;
 While(win->flag != exit){
