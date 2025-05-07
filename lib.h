@@ -1,9 +1,9 @@
 struct Node{
 Node* paths = Node*[4]; // [0] = north [1] = east [2] = south [3] = west
 int x;
-int y; 
-} 
-
+int y;
+bool if_Found;
+}
 
 
 // 
