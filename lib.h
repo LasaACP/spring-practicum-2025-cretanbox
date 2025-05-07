@@ -10,9 +10,9 @@ int y;
 class lib{
 
 // lib functions 
-
-static void getNode(int x, int y); public 
-static void setNode(Node set); public
+public:
+static void getNode(int x, int y); 
+static void setNode(Node set); 
 
 
 
