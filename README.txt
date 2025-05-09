@@ -12,10 +12,6 @@ README.txt
 leagal advice:
   //do not use this code without our permision
   //you have our unquestioned permision to use the code for any purpose, outside of other illegal activities; such as maze smuggling
-
-for (int i = 0; i < 201; i++){
-    std::cout<<i<<std::endl; 
-}
 lib.h
   //header file for the lib class basically where our graph class goes
   // contains the Node struct and its accompaniing functions
