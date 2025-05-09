@@ -10,7 +10,7 @@ Node* mazeGen::Generate(Node* s){
  Node* ohGodItsHideous[x][y];
 
  Node* thatsANewNode = new Node; 
- ohGodItsHideous[0, y + 1] = thatsANewNode;
+ ohGodItsHideous[0][y + 1] = thatsANewNode;
  
 
   while(false){
