@@ -12,10 +12,6 @@ static void setNode(Node set,int x,int y){
   
 }; 
 
-static void lib::retagN(*Node s, string tag);
-static bool lib::untagN(*Node s, string tag);
-static bool lib::tagN(*Node s, string tag);
-
 
 }
 
