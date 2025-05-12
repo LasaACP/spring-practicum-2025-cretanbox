@@ -4,7 +4,7 @@
 using namespace std; 
 
 Node* mazeGen::Generate(Node* s){
- Node* c = s; // what's this for? - CS
+ Node* c = s; // what's c for? - CS
  s->x = 0; 
  s->y = 0; 
  x = 10;
@@ -12,7 +12,7 @@ Node* mazeGen::Generate(Node* s){
  Node* ohGodItsHideous[x][y];
 
  Node* thatsANewNode = new Node; 
- ohGodItsHideous[0][y + 1] = thatsANewNode;
+ ohGodItsHideous[0][0] = thatsANewNode;
  
 
   while(false){
