@@ -4,19 +4,17 @@
 using namespace std; 
 
 Node* mazeGen::Generate(){
- x = 10;
- y = 10;
- Node* nodeMatrix[x][y];
- list<Node>* pushpop = new list<Node>*[(x*y)];
+ srand(0); // sets rand() seed to 0
+ x = 10; //sets maze width
+ y = 10; //sets maze height
+ Node* nodeMatrix[x][y]; //stores nodes by their x/y values. serves kinda like a mold or a support frame, and removed when the maze is generated.
+ list<Node>* pushpop = new list<Node>*[(x*y)]; //a vertex array to be used as a stack for maze generation. uninitialized upon completeion.
 
- for(int X = 0; X < x; X++){
-  for(int Y = 0; Y < y; Y++) {
-   Node* newNode = new Node;
-   newNode->x = X;
-   newNode->y = Y;
-   nodeMatrix[X][Y] = newNode;
-  }
+
+ nodeMatrix[0][0] = new Node();
+ //pushpop.push(nodeMatrix[0][0]);
+ int quota = x*y; //equals how many nodes are left to generate
+ while(quota != 0){ //keeps going until all nodes have been generated.
+  
  }
-
- while()
 }
