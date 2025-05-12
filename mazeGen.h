@@ -7,6 +7,6 @@ class mazeGen{
   int y; 
     mazeGen();
     ~mazeGen();
-    Node* generate(Node* s); 
+    Node* generate(); 
 };
 #endif
