@@ -10,6 +10,7 @@ Node* mazeGen::Generate(){
  x = 10;
  y = 10;
  Node* ohGodItsHideous[x][y];
+ list<Node>* pushpop = new list<Node>*[(x*y)];
 
  for(int X = 0; X < x; X++){
   for(int Y = 0; Y < y; Y++) {
