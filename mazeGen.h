@@ -1,5 +1,7 @@
 #ifndef MGEN_H
 #define MGEN_H
+#include <list>
+#include <vector>
 
 class mazeGen{
   public:
