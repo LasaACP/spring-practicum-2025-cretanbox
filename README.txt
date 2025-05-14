@@ -21,3 +21,7 @@ lib.cpp
 HelloWorld.cpp
   //Does nothing, nothing sees this, nothing is seen by this, literally trash.
   //We'll get around to deleteing this... eventually.
+
+
+credits:
+https://en.wikipedia.org/wiki/Maze_generation_algorithm
