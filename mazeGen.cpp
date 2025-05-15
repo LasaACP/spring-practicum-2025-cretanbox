@@ -18,6 +18,7 @@ Node* mazeGen::Generate(){
 
  int quota = x*y; //equals how many nodes are left to generate
  int xN, yN; //coordinates for the position the algorithm will go.
+ int r = 0; //store the randomly generated number.
  // note: the is_exit flag is being used to flag if a node is a dead end, or only connects to one non-flagged node.
  // note: we're generating the maze as we're building the paths. voidpointers in nodeMatix mark an ungenerated node, and thus we generate a node there if we try to go to it. this is where we fill the mold.
  while(quota != 0){ //keeps going until all nodes have been generated.
@@ -25,28 +26,45 @@ Node* mazeGen::Generate(){
    //if no ungenerated node is adjacent, then is_exit is flagged true.
    //then, pop this node off of pushpop, and deincrement quota by 1.
   }
-  switch(rand() % 4){
-   case 0: //using yN-1 to point North
-    if(yN-1 >= 0){
-     if(nodeMatrix[xN][yN-1] == nullptr){
-      nodeMatix[xN][yN-1] = new Node();
-      nodeMatix[xN][yN-1]->x = xN;
-      nodeMatix[xN][yN-1]->y = yN-1;
-      nodeMatix[xN][yN];
-     }
-    }
+  switch(r){
+   case 0: //try to go north
+    int XN = xN;
+    int YN = yN-1;
     break;
-   case 1:
-    //try to go east.
-    //If East is either out of bounds or East node with is_exit is true, break.
+   case 1: //try to east
+    int XN = xN+1;
+    int YN = yN;
     break;
-   case 2:
-    //try to go south.
-    //If South is either out of bounds or South node with is_exit is true, break.
+   case 2: //try to go south
+    int XN = xN;
+    int YN = yN+1;
     break;
-   case 3;
-    //you get the deal. same thing but with west.
+   case 3; //try to go west
+    int XN = xN-1;
+    int YN = yN;
     break;
   }
+  if( ((XN >= 0)&&(XN < x)) && ((YN >= 0)&&(YN < y)) ){
+     if(nodeMatrix[XN][YN] == nullptr){
+      nodeMatix[XN][YN] = new Node();
+      nodeMatix[XN][YN]->x = xN;
+      nodeMatix[XN][YN]->y = yN-1;
+      nodeMatix[xN][yN]->paths[r] = nodeMatix[XN][YN];
+      nodeMatix[XN][YN]->paths[(r+2)%4] = nodeMatix[xN][yN];
+      pushpop.push_back(nodeMatix[xN][yN]);
+      xN = XN;
+      yN = YN;
+     } else {
+      if((pushpop.back()->x != XN)||(pushpop.back()->y != YN)){
+       if(!(nodeMatix[XN][YN]->is_exit)){
+        pushpop.push_back(nodeMatrix[xN][yN]);
+        xN = XN;
+        yN = YN;
+       } else {
+        r = (r+1)%4;
+       }
+      }
+     }
+    }
  }
 }
