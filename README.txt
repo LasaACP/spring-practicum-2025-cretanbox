@@ -17,11 +17,12 @@ lib.h
   //header file for the lib class basically where our graph class goes
   //contains the Node struct and its accompaniing functions
 lib.cpp
-  //the actual functioning class
-HelloWorld.cpp
-  //Does nothing, nothing sees this, nothing is seen by this, literally trash.
-  //We'll get around to deleteing this... eventually.
-
+  //defines the Node struct
+mazeSolvent.cpp
+  //utilizes and algorithm to solve a pre generated maze
+mazeSolvent.h
+  //header file for mazeSolvent.cpp
 
 credits:
 https://en.wikipedia.org/wiki/Maze_generation_algorithm
+Depth First Search Edpuzzle
