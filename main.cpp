@@ -2,6 +2,7 @@
 #include "lib.h"
 #include "mazeGen.h"
 #include "mazeSolvent.h"
+using namespace std;
 
 
 
@@ -17,7 +18,7 @@ int main() {
     
     mazeGen amazeing;
     Node* theMaze = generator.Generate();
-    mazeDisplay(start);
+    mazeDisplay(theMaze);
     
     return 0;
 }
