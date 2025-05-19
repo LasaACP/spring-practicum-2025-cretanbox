@@ -17,7 +17,7 @@ int main() {
     //cin >> maze->y;
     
     mazeGen amazeing;
-    Node* theMaze = generator.Generate();
+    Node* theMaze = amazeing.Generate();
     mazeDisplay(theMaze);
     
     return 0;
