@@ -22,6 +22,8 @@ mazeSolvent.cpp
   //utilizes and algorithm to solve a pre generated maze
 mazeSolvent.h
   //header file for mazeSolvent.cpp
+main.cpp
+  //displays the generated and solved mazes
 
 credits:
 https://en.wikipedia.org/wiki/Maze_generation_algorithm
